@@ -1,9 +1,6 @@
 {
   "extends": "airbnb",
-  "globals": {
-    "describe": true,
-    "it": true,
-    "beforeEach": true,
-    "afterEach": true
+  "env": {
+      "mocha": true
   }
 }
