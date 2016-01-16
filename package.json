@@ -4,8 +4,8 @@
   "description": "Creating a React App from scratch",
   "main": "index.js",
   "scripts": {
-    "run:tests": "mocha ./components/**/*.tests.js --compilers js:babel-core/register",
-    "test": "npm run run:tests && npm run lint",
+    "test": "mocha ./components/**/*.tests.js --compilers js:babel-core/register",
+    "posttest": "npm run lint",
     "build": "webpack && open ./index.html",
     "build:watch": "webpack --watch",
     "lint": "eslint ./index.js ./components/**/*.js"
